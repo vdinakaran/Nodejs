@@ -1,0 +1,13 @@
+node.js
+open source development platform for executing JavaScript code server-side
+for developing applications that require a persistent connection from the browser to the server
+also in real-time applications such as chat, news feeds and web push notifications
+
+npm
+----------
+npm is the world's largest Software Registry(lib).
+Open-source developers use npm to share software.
+package manager for javascript.
+inndividual files containing reusuable code called modules.
+package is a directory containing one or more modules along with special file called package.json
+package.json contains metadata about package
