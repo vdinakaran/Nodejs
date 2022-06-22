@@ -6,6 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "keywords": [],
+  "author": "Varshini",
+  "license": "MIT",
+  "dependencies": {
+    "moment": "^2.29.3"
+  },
+  "devDependencies": {
+    "lodash": "^4.17.21"
+  }
 }
