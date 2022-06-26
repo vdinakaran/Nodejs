@@ -1,0 +1,49 @@
+node.js
+open source development platform for executing JavaScript code server-side
+for developing applications that require a persistent connection from the browser to the server
+node runs on a server not in a browser
+also in real-time applications such as chat, news feeds and web push notifications
+
+npm
+----------
+npm is the world's largest Software Registry(lib).
+Open-source developers use npm to share software.
+package manager for javascript.
+inndividual files containing reusuable code called modules.
+package is a directory containing one or more modules along with special file called package.json
+package.json contains metadata about package
+
+Creating Package.json
+-----------------------
+open command prompt
+set the path
+npm init or npm init --yes
+it will create package.json file
+npm config set init-author-name "Varshini"
+npm set init-licence "MIT"
+npm init
+to check default value-npm config get init-author-name
+npm  get init-license
+
+to delete default values
+npm config delete init-license
+npm config delete init-author-name
+
+to install package
+npm install name it will not display on package.json
+npm install name --save
+for dev purpose only
+npm install name --save-dev
+
+to uninstall
+npm uninstall name --save
+
+to install globaly
+npm install name -g
+
+to uninstall
+npm uninstall name -g
+
+listing packages
+npm list --depth 1
+npm list --global --depth 0 
