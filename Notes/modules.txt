@@ -1,0 +1,15 @@
+Modules
+------------------
+Node js modules is same as js lib
+we can use it in our application without any further installation and it has some built in modules
+we can create our own modules
+if we want to install any modules then we should use the require()func with module name
+
+node js built in modules
+-------------------------------
+http-to make node js act as an http server
+https-to make node js act as an https server
+fs-to handle file 
+events-to handle events
+path-to handle path
+url-to parse url strings 
