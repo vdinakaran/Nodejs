@@ -1,0 +1,17 @@
+require
+-----------
+to load Node JS modules
+
+create Server
+---------------
+to create an http server
+
+HTTP header
+-------------
+if the response from the http server is supposed to be displayed as HTML,so we should include HTTP header with the correct content type.
+the first argument res.writeHead() is status code and second argument is an object containing the response headers.
+
+Port Number
+-------------
+HTTP server listens to server ports
+this is passed into the http.createServer() 
