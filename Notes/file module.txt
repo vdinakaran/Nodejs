@@ -1,0 +1,43 @@
+allow to read,write,create,update,delete or rename files on computer.
+synchronous ans asynchronous
+asynchronous is better than synchronous
+it takes last parameter as a function callback
+inside callback() we pass the first parameter as err for printing error messages when the file have an eere
+
+Read file
+-----------
+synchronous
+var data=fs.readFileSync()
+Asynchronous
+var data=fs.readFile('filename',function(err,data)) //path,callback func
+
+Write file
+----------------
+fs.writeFile()
+if already exists it replaces the file otherwise it will create a new file
+path,data,callback
+fs.wrieFile('filename','helloworld',function(err));
+
+Append file
+--------------------
+fs.appendFile()
+fs.append File('filename','helloworld',function(err));
+
+Rename
+----------------
+fs.rename(existing,new,fun)
+
+delete
+----------------
+fs.unlink(path,fun)
+
+open
+-----------
+fs.openFile(path,mode,fun)
+it the file does not exist,it will create
+
+getting file info
+-----------------
+stats.isFile()
+stats.isDirectory()
+fs.stat(path,func)
