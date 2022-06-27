@@ -4,7 +4,7 @@ var url = require("url");
 http
   .createServer(function (req, res) {
     var weblink = url.parse(req.url, true);
-    var filepath = "." + weblink.pathname;
+    var filepath = "." + weblink.pathname; //. represents current directory
     var asyn = fs.readFile(filepath, function (err, data) {
       if (err) {
         res.writeHead(404, { "Content-type": "text/html" });
@@ -17,4 +17,4 @@ http
       res.end();
     });
   })
-  .listen(8010);
+  .listen(8011);
