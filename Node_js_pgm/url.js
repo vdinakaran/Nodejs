@@ -13,6 +13,7 @@ http
       }
       res.writeHead(200, { "Content-type": "text/html" });
       res.write(data);
+      //console.log(weblink.pathname);
       res.end();
     });
   })
