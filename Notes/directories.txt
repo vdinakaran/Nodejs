@@ -1,0 +1,3 @@
+mkdirSync()-to make directory
+rmdirSync()-to remove dir
+mkdir(file,fun())
