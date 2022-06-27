@@ -1,4 +1,5 @@
 Node.js has a built-in module, called "Events"
+it allows us to wire up custom events to our own obj and then emit those events at a later point in time.
 where you can create-, fire-, and listen for- your own events.
 assign event handlers to our own events with the EventEmitter object.
 to fire an event-emit()
