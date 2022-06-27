@@ -1,0 +1,2 @@
+URL module splits up a web address into a readable parts
+Parse an address with the url.parse() and it will split a URL object with each part of the address as properties
