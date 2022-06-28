@@ -1,0 +1,5 @@
+Buffers
+->temporary storage spot for chunk of data that is being transferred from one place to another
+->Buffere is filled with data then passed along
+->Transfer small chunks of data at a time
+
