@@ -11,3 +11,7 @@ package manager for javascript.
 inndividual files containing reusuable code called modules.
 package is a directory containing one or more modules along with special file called package.json
 package.json contains metadata about package
+
+nodemon
+=========
+keeps tracks of code changes and restarts the server when it detects the modified code

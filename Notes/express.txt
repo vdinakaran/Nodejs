@@ -1,0 +1,56 @@
+express
+-------------
+Express is a node js web application framework that provides broad features for building web and mobile applications
+install express module
+
+res.send
+-------------------
+res.send is only in Express.js.
+Performs many useful tasks for simple non-streaming responses.
+Ability to automatically assigns the Content-Length HTTP response header field.
+res.send=write+end
+
+res.send can only be called once, since it is equivalent to res.write + res.end()
+Example:
+app.get('/user/:id', function (req, res) {
+    res.send('OK');
+});
+
+content-length
+------------------
+The Content-Length header indicates the size of the message body, in bytes, sent to the recipient.
+Header type: Request header, Response header
+res.sendFile-to send html file
+_dirname-returns the directory name of the current execution file
+
+
+res.write
+------------------------
+response.write(chunk[, encoding][, callback])
+
+chunk <string> | <Buffer>
+encoding <string> Default: 'utf8'
+callback <Function>
+Returns: <boolean>
+callback will be called when this chunk of data is flushed
+
+The first time response.write() is called, it will send the buffered header information and the first chunk of the body to the client.
+The second time response.write() is called, Node.js assumes data will be streamed, and sends the new data separately.
+That is, the response is buffered up to the first chunk of the body.
+
+Returns true if the entire data was flushed successfully to the kernel buffer.
+Returns false if all or part of the data was queued in user memory.
+
+------------------
+flush() 
+writes the content of the buffer to the destination and makes the buffer empty for further data to store but it does not closes the stream permanently
+
+response.end
+-------------------------
+response.end([data[, encoding]][, callback])#
+data <string> | <Buffer>
+encoding <string>
+callback <Function>
+Returns: <this>
+This method signals to the server that all of the response headers and body have been sent;
+that server should consider this message complete. The method, response.end(), MUST be called on each response.
