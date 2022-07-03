@@ -12,7 +12,8 @@
   </head>
 
   <body>
-    Welcome to the profile of <%=data.name%><br />
+    <%- include(express\views\partials\nav.ejs); %>
+    <h1>Welcome to the profile of <%=data.name%></h1>
     <p><strong>Age:</strong><%=data.age%></p>
     <p><strong>Job:</strong><%=data.job%></p>
     <ul>
