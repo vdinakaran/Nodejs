@@ -54,3 +54,15 @@ callback <Function>
 Returns: <this>
 This method signals to the server that all of the response headers and body have been sent;
 that server should consider this message complete. The method, response.end(), MUST be called on each response.
+
+template engine
+-----------------------
+Template engine helps us to create an HTML template with minimal code.
+it can inject data into HTML template at client side and produce the final HTML
+
+
+partial templates
+-----------------------
+partail folder-pages
+
+-------------------
